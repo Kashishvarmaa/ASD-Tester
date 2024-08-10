@@ -15,10 +15,6 @@ Please follow the below steps to run this project.
 2. [FlutterFlow](https://flutterflow.io/)
 
 
-### Trailer
-https://github.com/daanyal011/detck1/assets/83022701/fa873e4a-95cf-4e6a-85e7-38429ec8da76
-
-
 
 <br></br>
 
