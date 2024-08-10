@@ -12,8 +12,7 @@ Please follow the below steps to run this project.
 
 ### Platform, Libraries and Frameworks used
 1. [Reactjs](https://react.dev/)
-2. [Streamlit](https://docs.streamlit.io/library/get-started)
-3. [FlutterFlow](https://flutterflow.io/)
+2. [FlutterFlow](https://flutterflow.io/)
 
 
 ### Trailer

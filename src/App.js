@@ -17,7 +17,7 @@ import Brainfrequency from './pages/Brainfrequency/Braintest';
 import MemoryTest from './pages/MemoryTest/MemoryTest';
 import BallGame from './pages/BallGame/BallGame';
 import VideoUpload from './pages/VideoUpload/VideoUpload'
-
+import Chatbot from './pages/Chatbot/ChatbotPage'; // Import the new ChatbotPage component
 
 function App() {
   const [theme, colorMode] = useMode ();
@@ -39,6 +39,7 @@ function App() {
           <PrivateRoute  path="/MemoryTest" component={MemoryTest} />
           <PrivateRoute  path="/BallGame" component={BallGame} />
           <PrivateRoute  path="/VideoUpload" component={VideoUpload} />
+          <PrivateRoute path="/Chatbot" component={Chatbot} />
           <Route path="/SignIn" component={SignIn} />
           <Route path="/SignUp" component={SignUp} />
           <Route exact path="*" component={SignIn} />

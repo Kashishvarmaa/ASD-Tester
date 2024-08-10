@@ -222,13 +222,12 @@ const Sidebar = () => {
             />
             <Item
               title="Chat Bot"
-              to="https://chat-bot-54.streamlit.app/"
+              to="/Chatbot"
               icon={<SmartToySharpIcon />}
               selected={selected}
               setSelected={setSelected}
               isExternal
             />
-            {/* <a href="https://chat-bot-54.streamlit.app/" target="_blank"><b></b></a> */}
 
             <Item
               title="Cure Center"

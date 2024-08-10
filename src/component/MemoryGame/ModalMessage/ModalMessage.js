@@ -1,10 +1,10 @@
 import { styled, Box } from '@mui/system';
-import ModalUnstyled from '@mui/base/ModalUnstyled';
+import Modal from '@mui/material/Modal';
 import { useContext } from 'react';
 import DataContext from '../../../GameContext';
 import { Button } from '@mui/material';
 
-const StyledModal = styled(ModalUnstyled)`
+const StyledModal = styled(Modal)`
   position: fixed;
   z-index: 1300;
   right: 0;
@@ -27,13 +27,8 @@ const Backdrop = styled('div')`
   -webkit-tap-highlight-color: transparent;
 `;
 
-
-
-
-
 function ModalMessage() {
-
-    const { open, CloseModal ,Message, Achivement} = useContext(DataContext)
+    const { open, CloseModal, Message, Achivement } = useContext(DataContext);
     return (
         <div>
             <StyledModal
@@ -51,9 +46,9 @@ function ModalMessage() {
                     pb: 3,
                     borderRadius: "15px"
                 }}>
-                    <h2 id="unstyled-modal-title">Game over {Message} </h2>
-                    <p id="unstyled-modal-description">You Lost at level  { Achivement.current}</p>
-                    <Button  size ={"Large"}  onClick={CloseModal} sx={{backgroundColor:"darkblue"}}>Click Here Play Again</Button>
+                    <h2 id="unstyled-modal-title">Game over {Message}</h2>
+                    <p id="unstyled-modal-description">You Lost at level {Achivement.current}</p>
+                    <Button size={"large"} onClick={CloseModal} sx={{ backgroundColor: "darkblue" }}>Click Here to Play Again</Button>
                 </Box>
             </StyledModal>
         </div>

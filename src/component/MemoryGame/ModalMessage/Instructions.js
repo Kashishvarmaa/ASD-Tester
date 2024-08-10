@@ -1,11 +1,10 @@
-
 import { styled, Box } from '@mui/system';
-import ModalUnstyled from '@mui/base/ModalUnstyled';
+import Modal from '@mui/material/Modal';
 import { useContext } from 'react';
 import DataContext from '../../../GameContext';
 import { Button } from '@mui/material';
 
-const StyledModal = styled(ModalUnstyled)`
+const StyledModal = styled(Modal)`
   position: fixed;
   z-index: 1300;
   right: 0;
@@ -28,13 +27,8 @@ const Backdrop = styled('div')`
   -webkit-tap-highlight-color: transparent;
 `;
 
-
-
-
-
 function InstructionsModal() {
-
-    const { HideInstructions, showInstructions, } = useContext(DataContext)
+    const { HideInstructions, showInstructions } = useContext(DataContext);
     return (
         <div>
             <StyledModal
@@ -54,21 +48,15 @@ function InstructionsModal() {
                 }}>
                     <h1> <u>How to play the game</u> </h1>
                     <ul>
-                        <li>The aim of the game is to remember as many orange box placements as possible in each level of the game </li>
-
+                        <li>The aim of the game is to remember as many orange box placements as possible in each level of the game</li>
                         <li>You have to press the start button to start playing each stage of the game</li>
-
                         <li>Each level begins with the player being given the time to preview the orange box placements.</li>
-
-                        <li>hen the player is given time to choose the correct placements during the select time</li>T
-
-                        <li>Should the play remember all the placement they advance to the next level, if they run out of time they lose the game</li>
-
-                        <li>players are given three chances, if they choose the incorrect placement for more than 3 times they loose game</li>
-
-                        <li>good luck!!!</li>
+                        <li>Then the player is given time to choose the correct placements during the select time</li>
+                        <li>Should the player remember all the placements they advance to the next level, if they run out of time they lose the game</li>
+                        <li>Players are given three chances; if they choose the incorrect placement more than 3 times, they lose the game</li>
+                        <li>Good luck!!!</li>
                     </ul>
-                    <Button size={"Large"} onClick={HideInstructions} sx={{ backgroundColor: "darkblue" }}>Ok</Button>
+                    <Button size={"large"} onClick={HideInstructions} sx={{ backgroundColor: "darkblue" }}>Ok</Button>
                 </Box>
             </StyledModal>
         </div>
