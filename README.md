@@ -1,28 +1,21 @@
-<<<<<<< HEAD
 # Autism Detection, Prevention & Cure Webapp
 
-> **Abstract** : Developed a web application for early detection of Autism Spectrum Disorder (ASD) through a suite of interactive games and assessments. Implemented various assessments, including AQ-10 test, finger-tapping exercises, visual memory games, emotional development games, hand-eye coordination assessments, and video recordings of daily activities. Analyzed user performance and behavior across these multi-modal assessments to identify autistic traits and determine the presence and severity of ASD. Utilized ReactJS, Streamlit, and FlutterFlow frameworks to build the application's frontend and backend components. Facilitated accessible and cost-effective screening for ASD, supporting early identification and intervention efforts.
+> **Abstract** : This web application is designed to facilitate the early detection of Autism Spectrum Disorder (ASD) through a suite of interactive assessments and games. The platform includes various assessments such as the AQ-10 test, finger-tapping exercises, visual memory games, emotional development games. By analyzing user performance a, the application can identify autistic traits and assess the presence and severity of ASD.
+
+The application is built using ReactJS with a focus on creating an accessible and cost-effective tool for ASD screening. This platform supports early identification and intervention efforts, making it a valuable resource for individuals and healthcare professionals alike.
 
 ### Deployment Steps
 Please follow the below steps to run this project.
 <br>
-1. `pip install node`<br>
-2. `npm build`<br>
-3. `npm run`<br><br>
+1. Install the necessary dependencies: `npm install`<br>
+2. Start the development server: `npm start`<br><br>
 
 ### Platform, Libraries and Frameworks used
-1. [Reactjs](https://react.dev/)
-2. [FlutterFlow](https://flutterflow.io/)
-
+1. [Reactjs]
+2. FireBase
+3. Google Gemini API
 
 
 <br></br>
 
-## Research Paper: Game-Changing Approach - Detecting Autism Spectrum Disorder Through Interactive Assessments
-- **Description:** Presenting an innovative approach to detecting ASD using a suite of interactive games and assessments. The system evaluates motor, cognitive, social, and emotional skills by engaging users in a series of tasks designed to assess various domains associated with ASD. By analyzing user performance and behavior across these multi-modal assessments, the system aims to identify autistic traits and determine the presence and severity of ASD. The paper highlights the potential of this approach to facilitate accessible and cost-effective screening for ASD, ultimately supporting early identification and intervention efforts.
-- [Online JETIR Paper](https://www.jetir.org/view?paper=JETIR2404266)
-- [Letter of Acceptance](https://drive.google.com/file/d/1uF79a3gNUo3LC6k9XYSULScTZEpGOHuc/view?usp=sharing)
-- [Certificate of Each Member](https://drive.google.com/file/d/1uKJUO_q7y2QkHfp3KpJ-d11Hzavapol-/view?usp=drive_link)
-=======
-# ASD-Tester
->>>>>>> origin/main
+
