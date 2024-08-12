@@ -134,7 +134,7 @@ const BallClicker = () => {
     <>
       {/* <div zindex={-5}> */}
     <div className="row justify-content-start mb-4">
-      <div  className="col-lg-7">
+      <div  className="col-lg-12 mb-4">
         {(score + misses) < 10 ?
       // {console.log(gameOver)}
         <div>
@@ -144,7 +144,7 @@ const BallClicker = () => {
             top: position.y,
             width: '50px',
             height: '50px',
-            backgroundColor: 'green',
+            backgroundColor: 'orange',
             borderRadius: '50%',
             zIndex: '5'
           }} onClick={handleGameClick}></div>}
@@ -161,7 +161,7 @@ const BallClicker = () => {
           }
         </div>
 
-        <div className="col-lg-5">
+        <div className="col-lg-12">
             <div className="border shadow p-4">
 
               {/* <div onClick={() => {
@@ -176,7 +176,7 @@ const BallClicker = () => {
                 <p>Misses: 
                   {misses}
                 </p>
-                <button className="btn btn-success" onClick={handleAddPostData} disabled={submitDisabled}>Submit Result</button>
+                <button className="btn btn-success" onClick={handleAddPostData} style={{backgroundColor: "orange" }} disabled={submitDisabled}>Submit Result</button>
               </div>
             </div>
             <div className="border p-4 mt-3 shadow">
@@ -185,10 +185,10 @@ const BallClicker = () => {
               <table class="table table-striped table-hover table-bordered border-primary">
                 <thead>
                   <tr>
-                    <th scope="col"><h6>No of Trails</h6></th>
-                    <th scope="col"><h6>Total Score</h6></th>
-                    <th scope="col"><h6>No of Hits Score</h6></th>
-                    <th scope="col"><h6>No of Miss</h6></th>
+                    <th scope="col"><h6>Trails</h6></th>
+                    <th scope="col"><h6>Total</h6></th>
+                    <th scope="col"><h6>Hits</h6></th>
+                    <th scope="col"><h6>Miss</h6></th>
                     <th scope="col"><h6>Accuracy</h6></th>
                   </tr>
                 </thead>
@@ -196,7 +196,7 @@ const BallClicker = () => {
                   {Object.entries(postData).map((item, index) => {
                     return (
                       <tr key={item[1]}>
-                        <th scope="row">{index + 1}trail</th>
+                        <th scope="row">Trail {index + 1}</th>
                         <td>10</td>
                         <td>{item[1].score}</td>
                         <td>{item[1].miss}</td>

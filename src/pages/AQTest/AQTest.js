@@ -19,7 +19,7 @@ const AQTest = () => {
             marginTop: 2,
             display: 'flex',
             flexDirection: 'column',
-            // alignItems: 'center',
+            alignItems: 'center',
           }}>
           <Typography
             variant="h2"
@@ -27,11 +27,10 @@ const AQTest = () => {
             fontWeight="bold"
             sx={{ m: "5px 25px" }}
           >
-              AQ Test          
+              Autism Quiz           
             </Typography>
           <Typography variant="h5"
             sx={{ m: "0px 25px" }} >
-            Game
           </Typography>
             <Container maxWidth="xl" sx={{ mt: 2, mb: 2 }}>
             <QuizGame/>

@@ -54,7 +54,7 @@ function EmojiGame() {
 
   return (
     <div className="row justify-content-start">
-      <div className="col-lg-8">
+      <div className="col-lg-12 mb-4">
     {/* <div className="Quit-1"> */}
       {/* <div className="card"> */}
         <div className="border shadow p-4">
@@ -66,7 +66,9 @@ function EmojiGame() {
           />
         ) : (
           <>
+          
           <p class="card-text question">
+            
               <img className="emoji-list" src={EmojiData[currentImage].image}/>
         </p>
           <div className="option-container">
@@ -89,26 +91,29 @@ function EmojiGame() {
               })}
               </ul>
             </div>
+            
+            <div className="d-flex justify-content-center">
             <input
               type="button"
               value="Next"
               className="next-button btn-primary btn"
               onClick={changeImage}
             />
+            </div>
             </>
           )}
           </div>
       {/* </div> */}
     {/* </div> */}
     </div>
-    <div className="col-lg-4">
+    <div className="col-lg-12">
     <div className="border p-4 shadow">
           <h4 className="">Score</h4>
           {postData ?
           <table class="table table-striped table-hover table-bordered border-primary">
           <thead>
             <tr>
-              <th scope="col"><h6>No of Trails</h6></th>
+              <th scope="col"><h6>Trails</h6></th>
               <th scope="col"><h6>Total Score</h6></th>
               <th scope="col"><h6>Your Score</h6></th>
               <th scope="col"><h6>Status</h6></th>
@@ -118,7 +123,6 @@ function EmojiGame() {
             {Object.entries(postData).map((item, index) => {
               return (
                 <tr key={item[1]}>
-                  <th scope="row">{index + 1} trail</th>
                   <td>8</td>
                   <td>{item[1].score}</td>
                   <td>{item[1].status == 1 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</td>

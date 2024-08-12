@@ -18,20 +18,18 @@ const AQTest = () => {
                     marginTop: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    // alignItems: 'center',
-                }}>
-                    <Typography
-                        variant="h2"
-                        // color={colors.grey[100]}
-                        fontWeight="bold"
-                        sx={{ m: "5px 25px" }}
-                    >
-                        Memory
-                    </Typography>
-                    <Typography variant="h5"
-                        sx={{ m: "0px 25px" }} >
-                        Test
-                    </Typography>
+                    alignItems: 'center',
+          }}>
+          <Typography
+            variant="h2"
+            // color={colors.grey[100]}
+            fontWeight="bold"
+            sx={{ m: "5px 25px" }}>
+            Memory Game       
+            </Typography>
+          <Typography variant="h5"
+            sx={{ m: "0px 25px" }} >
+          </Typography>
                     <Container maxWidth="xl" sx={{ mt: 2, mb: 2 }}>
                      <MGame />
                     </Container>

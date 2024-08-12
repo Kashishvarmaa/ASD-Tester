@@ -16,7 +16,7 @@ const BallGame = () => {
             marginTop: 2,
             display: 'flex',
             flexDirection: 'column',
-            // alignItems: 'center',
+            alignItems: 'center',
           }}>
           <Typography
             variant="h2"
@@ -24,11 +24,11 @@ const BallGame = () => {
             fontWeight="bold"
             sx={{ m: "5px 25px" }}
           >
-             Ball Clicking         
+             Ball Clicking Test       
             </Typography>
           <Typography variant="h5"
             sx={{ m: "0px 25px" }} >
-           Test
+
           </Typography>
             <Container maxWidth="xl" sx={{ mt: 2, mb: 2 }}>
             <BallClicker/>

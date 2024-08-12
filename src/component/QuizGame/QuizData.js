@@ -1,60 +1,62 @@
 export const QuizData = [
     {
-        question: "I often notice small sounds when others do not?",
+        question: "Do you find repetitive movements like hand flapping, rocking, or watching objects spin to be unsettling or uncomfortable?",
         options:[ "Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
-        answer1: 1,
-        answer2: 2
+        answer1: 3,
+        answer2: 4
     },
     {
-        question: "I usually concentrate more on the whole picture, rather than the small details?",
+        question: "Are you often indifferent towards specific topics, objects, numbers, or facts, rather than finding them fascinating?",
         options:["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
         answer1: 3,
         answer2: 4
     },
     {
-        question: "I find it easy to do more than one thing at once?",
+        question: "Is it usually easy for you to start and maintain conversations with others?",
         options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
         answer1: 3,
         answer2: 4
     },
     {
-        question: "There is an interruption, I can switch back to what I was doing very quickly?",
+        question: "Do you tend to notice the big picture rather than focusing on small details or parts of objects?",
+        options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
+        answer1: 3,
+       answer2: 4
+    },
+
+    {
+        question: "IDo you feel at ease when making friends or spending time with peers?",
         options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
         answer1: 3,
         answer2: 4
     },
+
     {
-        question: "I find it easy to read between the lines' when someone is talking to me?",
-        options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
-        answer1: 3,
-        answer2: 4
-    },
-    {
-        question: "I know how to tell if someone listening to me is getting bored?",
-        options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
-        answer1: 3,
-        answer2: 4
-    },
-    {
-        question: "When I'm reading a story I find it difficult to work out the characters' intentions?",
+        question: "Do you find it tricky to fully grasp or respond to the emotions or feelings of others?",
         options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
         answer1: 1,
         answer2: 2
     },
     {
-        question: "I like to collect information about categories of 8 things (eg types of car, types of bird, types of train, types of plant etc)",
+        question: "Are there times when you might not pick up on social cues, like when someone seems bored or uninterested?",
         options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
         answer1: 1,
         answer2: 2
     },
     {
-        question: "I find it easy to work out what someone is thinking or feeling just by looking at their face?",
+        question: "Do you have a special ability to remember details, such as specific dates or interesting facts?",
         options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
-        answer1: 3,
-        answer2: 4
+        answer1: 1,
+        answer2: 2
     },
     {
-        question: "I find it difficult to work out people's intentions?",
+        question: "Is it sometimes difficult to think flexibly, like when considering different solutions to a problem?",
+        options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
+        answer1: 1,
+        answer2: 2
+    },
+    {
+        question: "Do you enjoy certain sensory experiences, such as watching lights or spinning objects?",
         options: ["Definitely Agree","Slightly Agree","Slightly Disagree","Definitely Disagree"],
         answer1: 1,
         answer2: 2

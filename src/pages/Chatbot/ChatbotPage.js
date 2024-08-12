@@ -12,10 +12,12 @@ const ChatbotPage = () => {
         <Topbar />
         <Box
           sx={{
+            height: 'calc(100vh - <HeaderHeight> - <SidebarWidth>)', // Adjust based on your header and sidebar height
+            overflow: 'hidden',
             marginTop: 2,
             display: 'flex',
             flexDirection: 'column',
-            // alignItems: 'center',
+            alignItems: 'center',
           }}
         >
           <Typography
@@ -29,7 +31,7 @@ const ChatbotPage = () => {
             variant="h5"
             sx={{ m: "0px 25px" }}
           >
-            Interact with our AI chatbot
+            Interact with Gemini !!
           </Typography>
           <Container maxWidth="xl" sx={{ mt: 2, mb: 2 }}>
             <Chatbot />

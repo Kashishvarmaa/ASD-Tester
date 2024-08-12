@@ -133,9 +133,12 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  ASD Tester
+                  Autism Detector
+                  <p>
+
+                  </p>
                 </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
+                <Typography variant="h5" color={colors.orangeAccent[500]}>
                 {currentUser.email}
                 </Typography>
               </Box>
@@ -143,6 +146,15 @@ const Sidebar = () => {
           )}
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
+
+          <Typography
+            variant="body1"
+            style={{
+            marginLeft: '10px',
+            fontSize: '20px', // Increase font size
+            fontWeight: 'bold', // Make font thicker
+              }} >
+
             <Item
               title="Dashboard"
               to="/Home"
@@ -150,35 +162,35 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              Games
-            </Typography>
             <Item
-              title="Personal-History"
-              to="/PersonalHistory"
-              icon={<PeopleOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Medical-History"
-              to="/MedicalHistory"
-              icon={<CalendarTodayOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="AQ-Test"
+              title="Autism Quiz"
               to="/AQTest"
               icon={<QuizIcon />}
               selected={selected}
               setSelected={setSelected}
             />
+
+            <Item
+              title="Chat Bot"
+              to="/Chatbot"
+              icon={<SmartToySharpIcon />}
+              selected={selected}
+              setSelected={setSelected}
+              isExternal
+            />
+            <p>
+            <hr/>
+            </p>
+            <Typography
+              variant="h5"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+              fontWeight="bold"
+              textAlign={"flex"}
+            >
+              Games
+            </Typography>
+            
             <Item
               title="Finger-Tapping"
               to="/FingerTapping"
@@ -193,13 +205,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
-              title="Brain Frequency"
-              to="/BrainFrequency"
-              icon={<MonitorHeartIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+            
             <Item
               title="Memory Test"
               to="/MemoryTest"
@@ -214,94 +220,8 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item title= "Video Upload"
-              to="/VideoUpload"
-              icon={<UploadFileIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Chat Bot"
-              to="/Chatbot"
-              icon={<SmartToySharpIcon />}
-              selected={selected}
-              setSelected={setSelected}
-              isExternal
-            />
 
-            <Item
-              title="Cure Center"
-              to="https://cure-center-nir91f.flutterflow.app/"
-              icon={<MedicalServicesIcon />}
-              selected={selected}
-              setSelected={setSelected}
-              isExternal
-            />
-            {/* <Item title= "cure center"
-              to="https://cure-center-nir91f.flutterflow.app/"
-              icon={<MedicalServicesIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <a href="https://cure-center-nir91f.flutterflow.app/" target="_blank"><b></b></a> */}
-
-
-            {/* <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-            Result
             </Typography>
-            <Item
-              title="Profile Form"
-              to="/form"
-              icon={<PersonOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
-            {/* <Item
-              title="Calendar"
-              to="/calendar"
-              icon={<CalendarTodayOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
-            {/* <Item
-              title="FAQ Page"
-              to="/faq"
-              icon={<HelpOutlineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
-            {/* <Item
-              title="Bar Chart"
-              to="/bar"
-              icon={<BarChartOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Pie Chart"
-              to="/pie"
-              icon={<PieChartOutlineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
-            {/* <Item
-              title="Line Chart"
-              to="/line"
-              icon={<TimelineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Geography Chart"
-              to="/geography"
-              icon={<MapOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
           </Box>
         </Menu>
       </ProSidebar>

@@ -110,16 +110,19 @@ function Tapping() {
     return (
       <>
         <div className="row justify-content-center">
-          <div className="col-lg-6">
+          <div className="col-lg-12 mb-4">
             <div className="border p-4 shadow">
               <h4 className="text-right">Timer: {timer}s</h4>
               <h1 className="text-center my-5">Counter: {count}</h1>
+
+              <div className="d-flex justify-content-center">
               <button className="btn btn-warning" onClick={handleButtonClick} disabled={buttonDisabled}>Tap Me to start</button>
               <button className="btn btn-danger mx-2" onClick={handleRefreshClick}>Reset</button>
               <button className="btn btn-success" onClick={handleAddPostData} disabled={submitDisabled}>Submit Result</button>
             </div>
+            </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-12">
           <div className="border p-4 shadow">
           <h4 className="">Score</h4>
           {postData ?
@@ -134,7 +137,7 @@ function Tapping() {
             {Object.entries(postData).map((item, index) => {
               return (
                 <tr key={item[1]}>
-                  <th scope="row">{index + 1} trail</th>
+                  <th scope="row">Trail {index + 1} </th>
                   <td>{item[1].score}</td>
                 </tr>
               )} ) }

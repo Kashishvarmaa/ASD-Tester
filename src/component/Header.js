@@ -30,7 +30,7 @@ const Header = () => {
       getAqData();
       getFTData();
       getEJData();
-      getBFData();
+    
       getMTData();
       getBCData();
     }
@@ -60,20 +60,6 @@ const Header = () => {
       .catch((error) => console.log(error));
   };
 
-  const getBFData = () => {
-    Axios.get(`https://fun-games-c4f99-default-rtdb.firebaseio.com/brainfrequency/${userId}.json`)
-      .then((response) => {
-        const data = response.data || {};
-        setBFData(data);
-        const entries = Object.entries(data);
-        setAlphaAverage(entries.reduce((acc, [_, value]) => acc + value.alpha, 0) / entries.length || 0);
-        setBetaAverage(entries.reduce((acc, [_, value]) => acc + value.beta, 0) / entries.length || 0);
-        setGammaAverage(entries.reduce((acc, [_, value]) => acc + value.gamma, 0) / entries.length || 0);
-        setDeltaAverage(entries.reduce((acc, [_, value]) => acc + value.delta, 0) / entries.length || 0);
-        setthethaAverage(entries.reduce((acc, [_, value]) => acc + value.thetha, 0) / entries.length || 0);
-      })
-      .catch((error) => console.log(error));
-  };
 
   const getMTData = () => {
     Axios.get(`https://fun-games-c4f99-default-rtdb.firebaseio.com/memorytest/${userId}.json`)
@@ -101,10 +87,19 @@ const Header = () => {
 
   return (
     <div className="row justify-content-start">
-      <div className="col-lg-10">
-        <div className="border p-4 shadow">
+      <div className="col-lg-12 mb-4">
+      <div className="border p-4 shadow d-flex flex-column h-100">
+      <div className="flex-grow-1">
           <div className="d-flex justify-content-between mb-3">
-            <h1 className="mb-4">Patient Name: {currentUser?.displayName}</h1>
+            <h4 className="mb-4">
+            Hey, {currentUser?.displayName}!!
+            <br>
+
+            </br> Ready to dive into “Autism Detector,” where fun and insight collide? 😎 The ultimate autism quiz is calling your name—get ready to challenge yourself and learn something new! 🧠✨ And that’s not all! Chat with our awesome Gemini-powered bot (because AI pals are just cool 🤖), and test your skills with games like finger tapping, emoji guessing, memory challenges, and ball clicking.
+            <br>
+            </br> 🎯 It’s a total brain party, and you’re invited! Let’s get started and see what’s up! 🚀🎈
+            </h4>
+            <div className="d-flex justify-content-center mt-auto">
             <DownloadTableExcel
               filename="users table"
               sheet="users"
@@ -113,11 +108,13 @@ const Header = () => {
               <button className="btn btn-sm btn-success">Export Result</button>
             </DownloadTableExcel>
           </div>
+          </div>
+          </div>
           {Object.keys(ejData).length > 0 ? (
             <table className="table table-striped table-hover table-bordered border-primary" ref={tableRef}>
               <thead>
                 <tr>
-                  <th colSpan="4"><h6>Patient Name: {currentUser?.displayName}</h6></th>
+                  <th colSpan="4"><h6>Name: {currentUser?.displayName}</h6></th>
                 </tr>
                 <tr>
                   <th scope="col"><h6>Test Type</h6></th>
@@ -161,43 +158,11 @@ const Header = () => {
                   <td>More than 70%</td>
                   <td>{btaverage >= 70 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</td>
                 </tr>
-                <tr>
-                  <th colSpan="4">Brain Frequency</th>
-                </tr>
-                <tr>
-                  <th scope="row">Alpha</th>
-                  <td>{alphaAverage.toFixed(0)}</td>
-                  <td>More than 10%</td>
-                  <td>{alphaAverage > 10 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</td>
-                </tr>
-                <tr>
-                  <th scope="row">Beta</th>
-                  <td>{betaAverage.toFixed(0)}</td>
-                  <td>More than 10%</td>
-                  <td>{betaAverage > 10 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</td>
-                </tr>
-                <tr>
-                  <th scope="row">Gamma</th>
-                  <td>{gammaAverage.toFixed(0)}</td>
-                  <td>More than 10%</td>
-                  <td>{gammaAverage > 10 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</td>
-                </tr>
-                <tr>
-                  <th scope="row">Delta</th>
-                  <td>{deltaAverage.toFixed(0)}</td>
-                  <td>More than 10%</td>
-                  <td>{deltaAverage > 10 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</td>
-                </tr>
-                <tr>
-                  <th scope="row">Theta</th>
-                  <td>{thethaAverage.toFixed(0)}</td>
-                  <td>More than 10%</td>
-                  <td>{thethaAverage > 10 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</td>
-                </tr>
+                
               </tbody>
             </table>
           ) : (
-            <p>Loading data...</p>
+            <p></p>
           )}
         </div>
       </div>

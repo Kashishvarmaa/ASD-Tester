@@ -55,7 +55,7 @@ function Quiz() {
   return (
     <>
       <div className="row justify-content-start">
-        <div className="col-lg-8">
+        <div className="col-lg-12 mb-4">
           {/* <div className="Quit-1"> */}
           {/* <div className="card"> */}
           <div className="border shadow p-4">
@@ -91,19 +91,21 @@ function Quiz() {
                     })}
                   </ul>
                 </div>
+                <div className="d-flex justify-content-center">
                 <input
                   type="button"
                   value="Next"
-                  className="next-button btn-primary text-primary btn"
+                  className="next-button btn-primary text-white btn"
                   onClick={changeQuestion}
                 />
+                </div>
               </>
             )}
           </div>
           {/* </div> */}
           {/* </div> */}
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-12">
           <div className="border p-4 shadow">
             <h4 className="">Score</h4>
             {postData ?
@@ -111,7 +113,7 @@ function Quiz() {
                 <thead>
                   <tr>
                     <th scope="col"><h6>No of Trails</h6></th>
-                    <th scope="col"><h6>Total Score</h6></th>
+                    <th scope="col"><h6>Total</h6></th>
                     <th scope="col"><h6>Your Score</h6></th>
                     <th scope="col"><h6>Status</h6></th>
                   </tr>
@@ -120,7 +122,7 @@ function Quiz() {
                   {Object.entries(postData).map((item, index) => {
                     return (
                       <tr key={item[1]}>
-                        <th scope="row">{index + 1} trail</th>
+                        <th scope="row"> Trail {index + 1}</th>
                         <td>10</td>
                         <td>{item[1].score}</td>
                         <td>{item[1].status == 1 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</td>

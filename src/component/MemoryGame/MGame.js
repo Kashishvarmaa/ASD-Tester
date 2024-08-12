@@ -95,7 +95,7 @@ const MGame = () => {
     return (
         <>
             <div className="row justify-content-start">
-                <div className="col-lg-8">
+                <div className="col-lg-12 mb-4">
                     <div className="border shadow p-4">
                         <DataProvider>
                             {/* <Navbar /> */}
@@ -137,17 +137,17 @@ const MGame = () => {
                     </Box> */}
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-12">
                     <div className="border p-4 shadow">
                         <h4 className="">Score</h4>
                         {postData ?
                             <table class="table table-striped table-hover table-bordered border-primary">
                                 <thead>
                                     <tr>
-                                        <th scope="col"><h6>No of Trails</h6></th>
+                                        <th scope="col"><h6>Trails</h6></th>
                                         <th scope="col"><h6>Total Score</h6></th>
-                                        <th scope="col"><h6>No of hits</h6></th>
-                                        <th scope="col"><h6>No of miss</h6></th>
+                                        <th scope="col"><h6>Hits</h6></th>
+                                        <th scope="col"><h6>Miss</h6></th>
                                         <th scope="col"><h6>Total</h6></th>
                                         {/* <th scope="col"><h6>Status</h6></th> */}
                                     </tr>
@@ -156,7 +156,7 @@ const MGame = () => {
                                     {Object.entries(postData).map((item, index) => {
                                         return (
                                             <tr key={item[1]}>
-                                                <th scope="row">{index + 1}trail</th>
+                                                <th scope="row">Trail {index + 1}</th>
                                                 <td>{item[1].totalnumber}</td>
                                                 <td>{item[1].score}</td>
                                                 <td>{item[1].miss}</td>
@@ -167,9 +167,9 @@ const MGame = () => {
                                     })}
                                 </tbody>
                                 <p className="mt-4 d-flex">Average : {(average).toFixed(0)}%</p>
-                                <p className="mt-4">status : { (average).toFixed(0) >= 70 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</p>
+                                <p className="mt-4">Status : { (average).toFixed(0) >= 70 ? <span className="text-success">Non Autistic</span> : <span className="text-danger">Autistic</span>}</p>
                                 </table>
-                            : <span className="noTaskAdded p-5">To View Score Play the game</span>}
+                            : <span className="noTaskAdded p-5">To View Score Play The Game</span>}
 
                     </div>
                 </div>

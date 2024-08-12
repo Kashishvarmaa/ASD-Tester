@@ -7,7 +7,7 @@ import Container  from "@mui/material/Container";
 
 
 const AQTest = () => {
-  // const theme = useTheme();
+  // const theme = useTheme;
   // const colors = tokens(theme.palette.mode);
 
   return (
@@ -19,7 +19,7 @@ const AQTest = () => {
             marginTop: 2,
             display: 'flex',
             flexDirection: 'column',
-            // alignItems: 'center',
+            alignItems: 'center',
           }}>
           <Typography
             variant="h2"
@@ -27,11 +27,15 @@ const AQTest = () => {
             fontWeight="bold"
             sx={{ m: "5px 25px" }}
           >
-              Emoji Test          
+            Emoji Test      
             </Typography>
           <Typography variant="h5"
             sx={{ m: "0px 25px" }} >
-            Game
+
+          </Typography>
+          <Typography variant="h5"
+            sx={{ m: "0px 25px" }} >
+            
           </Typography>
             <Container maxWidth="xl" sx={{ mt: 2, mb: 2 }}>
             <EmojiGame/>
