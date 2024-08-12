@@ -20,7 +20,4 @@ Please follow the below steps to run this project.
 
 <br></br>
 
-Team Members:
--Kashish Varma
--Ajay S Patil
 
