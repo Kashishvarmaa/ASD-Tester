@@ -1,4 +1,4 @@
-# Autism Detection, Prevention & Cure Webapp
+# Autism Detector 
 
 **Abstract** : 
 
@@ -16,8 +16,6 @@ Please follow the below steps to run this project.
 1. Reactjs
 2. FireBase
 3. Google Gemini API
-
-
 <br></br>
 
 
