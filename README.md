@@ -1,21 +1,72 @@
-# Autism Detector 
+# Autism Detector  
 
-**Abstract** : 
+## About  
 
-This web application is designed to facilitate the early detection of Autism Spectrum Disorder (ASD) through a suite of interactive assessments and games. The platform includes various assessments such as the AQ-10 test, finger-tapping exercises, visual memory games, emotional development games. By analyzing user performance a, the application can identify autistic traits and assess the presence and severity of ASD.
+The **Autism Detector** is a web-based application designed to aid in the **early detection of Autism Spectrum Disorder (ASD)** through interactive assessments and games. The platform is built to be an **accessible, cost-effective, and user-friendly** tool for individuals, caregivers, and healthcare professionals.  
 
-The application is built using ReactJS with a focus on creating an accessible and cost-effective tool for ASD screening. This platform supports early identification and intervention efforts, making it a valuable resource for individuals and healthcare professionals alike.
+### Key Features:  
+- **Standardized ASD Assessments** – Includes the **AQ-10 test** to screen for autism traits.  
+- **Interactive Cognitive Tests** – Features **finger-tapping exercises** and **visual memory games** to analyze motor and cognitive skills.  
+- **Emotional Development Games** – Evaluates facial recognition and emotional response patterns.  
+- **AI-Powered Insights** – Uses **Google Gemini API** to enhance data interpretation and provide meaningful feedback.  
+- **Cloud-Based Storage** – Securely stores assessment results using **Firebase**, ensuring accessibility and data integrity.  
 
-### Deployment Steps
-Please follow the below steps to run this project.
-<br>
-1. Install the necessary dependencies: `npm install`<br>
-2. Start the development server: `npm start`<br><br>
+By analyzing user responses and behaviors, the **Autism Detector** identifies potential **autistic traits** and assesses the **presence and severity of ASD**. This platform can be a valuable early screening tool, promoting **timely intervention and better support** for individuals with autism.  
 
-### Platform, Libraries and Frameworks used
-1. Reactjs
-2. FireBase
-3. Google Gemini API
-<br></br>
+---
+
+## Deployment  
+
+Follow these steps to set up and run the project locally:  
+
+### Prerequisites  
+Ensure you have the following installed:  
+- **Node.js** (for running the frontend)  
+- **Firebase CLI** (for backend integration)  
+- **MetaMask** or any Ethereum-compatible wallet (if applicable)  
+
+### Steps to Deploy Locally  
+
+1. Clone the repository:  
+   ```sh
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+  ```sh
+  npm start
+  ```
+
+4. Open the application in your browser:
+  ```sh
+  http://localhost:3000
+  ```
+
+### Technologies Used
+- ReactJS – For building a dynamic and interactive frontend.
+- Firebase – For secure data storage and authentication.
+- Google Gemini API – For AI-driven insights and data analysis.
+
+## Authors
+- [Ajay S Patil](https://github.com/ajayspatil7)
+- [Ananya S Kaligal](https://github.com/ananyakaligal)
+- [Kashish Varma](https://github.com/kashishvarmaa)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
